@@ -1,0 +1,408 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /*border: 1px solid red;*/
+}
+body {
+    line-height: 1.25;
+    width: 70%;
+    min-width: 600px;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: auto;
+}
+.form button {
+    transition: all 0.2s ease;
+    border: 1px solid #5F709E;
+    font-weight: bold;
+    color: white;
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-block;
+    background-color: #5F709E;
+    padding: 12px 18px;
+    margin: 8px 0;
+    font-size: 1.2em;
+    min-width: 188px;
+    cursor: pointer;
+}
+form button:hover {
+    transition: all .2s ease;
+    background-color: #4f608e;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    margin-bottom: 6vh;
+    align-items: center;
+    box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.3);
+    /*background-color: hotpink;*/
+}
+nav a, nav button {
+    transition: all .2s ease;
+    border: 0px !important;
+    display: flex;
+    height: 60px;
+    color: black;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 1.3em;
+    position: relative;
+    align-content: center;
+    align-items: center;
+    padding: 0 25px;
+    background-color: inherit; 
+    cursor: pointer;
+}
+nav a:hover, nav button:hover {
+    transition: all .2s ease;
+    background-color: rgba(240,240,240);
+}
+
+button {
+    border: 0px;
+    display: flex;
+}
+
+.wrapper-content {
+    display: flex;
+    background-color: #92D4F4;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.bilde {
+    height: 100%;
+    width: 100%;
+}
+.innhold-stasjon {
+    display: flex;
+    width: 94%;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    font-size: 2vw;
+}
+.linje {
+    display: inline-table;
+}
+.linje-innhold {
+    margin: auto;
+}
+a {
+    text-decoration: none;
+}
+#midt {
+    display: block;
+    margin: auto;
+}
+.linker_linje_wrap {
+    display: flex;
+    width: 15%;
+    justify-content: space-between;
+    margin: 4vw 0vw 5vw 23vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.linker_stasjon_wrap {
+    display: flex;
+    width: 48%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 5vh 0vw 20vh 2vw;
+    align-content: space-around;
+    height: 70vh;
+}
+.index_meny {
+    overflow-x: hidden;
+    margin-top: 15vh;
+    width: 100%;
+    display: block;
+    border-top: 5px solid black;
+}
+.mid_bilde {
+    margin: 10vh auto 0vh auto;
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    background-color: white;
+    position: absolute;
+    z-index: 999999;
+    top: 170px;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+    box-shadow: 1px 4px 7px 1px rgba(0,0,0,0.3);
+    padding: 1vh;
+}
+.dropdown button {
+    width: 100%;
+}
+
+#legg-til:hover .dropdown, .dropdown:hover .dropdown {
+    display: inline-flex !important;
+}
+
+.film-uthev {
+    background-color: #BEBEBE;
+}
+
+.filmer {
+    width: 75%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin: auto;
+    /*
+    border: 1px solid black;*/
+}
+.filmer td img {
+    height: 250px;
+    width: 178px;
+    object-fit: cover;
+    display: block;
+    float: right;
+}
+.filmer td {
+    position: relative;
+    display: table-cell;
+    padding: 20px 0;
+    align-items: flex-start;
+    vertical-align: top;
+    text-align: left;
+    width: 40%;
+    border-bottom: 1px solid black;
+}
+
+.film-endring div {
+    
+    display: table-cell;
+    padding: 20px 0;
+    align-items: flex-start;
+    vertical-align: top;
+    text-align: left;
+    width: 40%;
+    
+}
+
+input, select, textarea {
+    transition: all 0.2s ease;
+    border: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    text-align: left;
+    display: block;
+    background-color: #e6e6e6;
+    padding: 12px 18px;
+    margin: 8px 0;
+    width: 100%;
+    max-width: 700px;
+    font-size: 1.2em;
+    min-height: calc(24px + 1em * 1.25);
+    max-height: 300px;
+    resize: vertical;
+}
+
+.visning-tabell {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.visning-tabell th {
+    font-size: 30px;
+}
+
+.visning-tabell tbody tr {
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+    /*display: block;*/
+}
+.visning-tabell td {
+    font-size: 1.3em;
+    vertical-align: middle;
+}
+
+.visning-tabell form button {
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    width: 60%;       
+}
+
+.trash-film, .trash-visning {
+    width: 10%!important;
+    text-align: center!important;
+}
+
+.trash-visning button {
+    border: 3px solid black;
+    background-color: transparent;
+}
+
+
+
+.material-icons {
+    font-family: 'Material Icons';
+    
+}
+
+.filmer-button {
+    background-color: transparent;
+    border: 3px solid black;
+}
+
+.add-button {
+    margin:auto;
+    display: block!important;
+    font-size: 50px!important;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.filmer form button {
+    margin: 0px 0px 10px 10px;
+    display: block!important;
+}
+
+
+.edit-button:hover {
+    border-color: #FFD100!important;
+    color: #FFD100!important;
+    background-color: transparent!important;
+    cursor: pointer;
+}
+
+.add-button:hover, .check-button:hover {
+    border-color: forestgreen!important;
+    color: forestgreen!important;
+    background-color: transparent!important;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    border-color: red!important;
+    color: red!important;
+    background-color: transparent!important;
+    cursor: pointer;
+}
+
+.filmer-button-visning {
+    transition: all 0.2s ease;
+    border: 1px solid #5F709E;
+    font-weight: bold;
+    color: white;
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-block;
+    background-color: #5F709E;
+    padding: 12px 18px;
+    margin: 8px 0!important;
+    font-size: 1.2em;
+    min-width: 188px;
+    cursor: pointer;
+}
+
+.valg {
+    text-align: center;
+    display: block;
+    width: 30%;
+    margin: auto;
+}
+
+.header {
+    display: block;
+    margin: auto;
+    height: 110px;
+}
+
+.melding {
+    display: block;
+    color: #C71515;
+    font-size: 2em;
+    font-weight: bold;
+    box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.3);
+    width: 60%;
+    margin: 10px auto 30px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.edit-visning-input {
+    text-align: center;
+}
+
+#edit-visning-film {
+    width: 118%;
+    padding: 15px 18px;
+    font-size: 19px;
+    text-align: center;
+}
+
+.film-edit-textarea {
+    height: 300px;
+}
+
+.film-edit-input {
+    /*background-color: rgb(245,245,245);*/
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.3);
+    border-bottom: 3px solid darkgrey;
+    border-radius: 15px 15px 0 0;
+}
+
+.film-edit-img {
+    width: 300px!important;
+    height: 476px!important;
+    object-fit: cover;
+}
+
+.film-endring button{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.edit-button {
+    background-color: transparent;
+}
+
+.mid {
+    margin: auto;
+    width: 50%;
+}
+
+.film-info {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    height: 94%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.tittel-beskrivelse {
+    flex-grow: 1;
+}
+
+.tittel-beskrivelse p {    
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    display: block;
+    color: black;
+    height: 80%;
+}
+
